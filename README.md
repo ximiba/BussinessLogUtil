@@ -1,10 +1,12 @@
-# BussinessLogUtil
-此类是一个工具类,主要用于系统业务操作过程中所发生的的变动日志记录。比如记录表单编辑操作，数据新增来源操作等,  日志主要记录在mongodb中便于查询。     
-----
-*效果如下:*  
+# BussinessLogUtil  
+**此类是一个工具类，主要用于系统业务操作过程中所发生的的变动日志记录。  
+比如记录表单编辑操作，数据新增来源操作等,  日志主要记录在mongodb中便于查询。**       
+**可以记录操作人、操作时间、操作类型、操作内容等**  
+
+**效果如下:**  
   
   
-![image](https://user-images.githubusercontent.com/25970991/110087008-0ecd4280-7dce-11eb-96fd-c18826ece2fd.png)
+ ![image](https://user-images.githubusercontent.com/25970991/110087008-0ecd4280-7dce-11eb-96fd-c18826ece2fd.png)
 
   
  

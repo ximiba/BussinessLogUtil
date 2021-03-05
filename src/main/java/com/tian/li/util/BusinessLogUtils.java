@@ -211,7 +211,8 @@ public class BusinessLogUtils<T> {
                 e.printStackTrace();
             }
 
-            if (saveRemark == 0) {
+            //保存标识 默认0是保存
+            if (saveRemark == 0 && StringUtils.isNotBlank(sb.toString())) {
                 BizLogEntity bizLogEntity = new BizLogEntity();
                 bizLogEntity.setOperateContent(sb.toString());
                 saveData(bizLogEntity);

@@ -286,14 +286,7 @@ public class BusinessLogUtils<T> {
          */
         public void saveData(List<BizLogEntity> entityList) {
             entityList.stream().forEach(bizLogEntity -> {
-                bizLogEntity.setEnterpriseId(enterpriseId);
-                bizLogEntity.setPrecictId(precictId);
-                bizLogEntity.setUserId(userId);
-                bizLogEntity.setUserName(userName);
-                bizLogEntity.setOperateDate(new Date());
-                bizLogEntity.setDataId(bizLogEntity.getDataId() == null ? dataId : bizLogEntity.getDataId());
-                bizLogEntity.setOperateType(StringUtils.isBlank(bizLogEntity.getOperateType()) ? operateType : bizLogEntity.getOperateType());
-                this.mongoTemplate.save(bizLogEntity, StringUtils.isBlank(collectionName) ? DEFAULT_COLLECTION_NAME : collectionName);
+                saveData(bizLogEntity);
             });
         }
     }
